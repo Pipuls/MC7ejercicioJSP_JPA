@@ -48,6 +48,8 @@ public class SvPersona extends HttpServlet {
         String apellido = request.getParameter("apellido");
         String telefono = request.getParameter("telefono");
         
+        System.out.println("dni:" + dni);
+        
         Persona pers = new Persona (0, dni, nombre, apellido, telefono);
         control.crearPersona(pers);
 
